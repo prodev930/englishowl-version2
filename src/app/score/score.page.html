@@ -1,0 +1,30 @@
+<div id="container">
+  <div class="toolbar">
+    <div><a [routerLink]="'/level'">
+        <img class="left" src="../../assets/img/Left Top Circle Button.png" alt="" />
+      </a>
+    </div>
+    <div>
+      <img class="right"  (click)="signout()" src="../../assets/img/Right Top Circle Button.png" alt="" />
+    </div>
+  </div>
+  <div class="context">
+    <div class="content">
+      <div class="content1">Your Score</div>
+      <div class="section">
+        <div class="content2">Warming Up With Essential Grammatical Terms</div>
+        <div class="discription">
+          <div id="chart">
+            <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart"
+              [plotOptions]="chartOptions.plotOptions" [labels]="chartOptions.labels"></apx-chart>
+          </div>
+
+        </div>
+        <div class="retake">
+          <button class="test_again"><a style="text-decoration: none; color: white;" [routerLink]="'/level'">Retake Quiz?</a></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

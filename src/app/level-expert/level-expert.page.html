@@ -1,0 +1,34 @@
+<div id="container">
+  <div>
+    <div class="toolbar">
+      <div>
+        <a [routerLink]="'/level'">
+          <img class="left" src="../../assets/img/Left Top Circle Button.png" alt="" />
+        </a>
+      </div>
+      <div>
+        <img class="right" (click)="signout()"  src="../../assets/img/Right Top Circle Button.png" alt="" />
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="selectChapter" style="display: flex; flex-direction: column;">
+        <div class="chapterbtn-group" *ngFor="let chapter of chapters; let i = index">
+          <a [routerLink]="chapter.lockstatus ? '/chapter' : '/level-expert'" (click)="retrieveTutorials(chapter.id)" class="routerlink">
+            <div class="chapterbtn" style="margin-top: 3vh">
+              <div class="chapter">
+                <div class="chapterTxt">{{chapter.chaptername}}</div>
+                <img *ngIf="!chapter.lockstatus" class="key" src="../../assets/img/lock.png" alt="" />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="selectLevel">
+        <div class="rookie">Expert</div>
+
+      </div>
+    </div>
+  </div>
+</div>

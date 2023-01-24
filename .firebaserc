@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "englishtest-e60be": {
+      "hosting": {
+        "app": [
+          "englishtest-e60be"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "englishtest-e60be"
+  }
+}

@@ -1,0 +1,129 @@
+#container {
+    overflow: auto;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // gap: 5vh;
+
+    .toolbar {
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .context {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24.5vh;
+
+        .content {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            // gap: 2vh;
+
+            .content1 {
+                font-size: 13vw;
+
+            }
+
+            .content2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0 15px 0 15px;
+                gap: 15px;
+                font-size: 6vw;
+            }
+
+            .section {
+                margin-top: 2vh;
+                display: flex;
+                flex-direction: column;
+                gap: 2vh;
+            }
+
+            .discription {
+                display: flex;
+                text-align: left;
+                // font-size: 4vw;
+            }
+        }
+
+        .markDone {
+            margin-top: 3vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 9.8vh;
+            width: 80%;
+
+            .mark {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 6vw;
+                color: white;
+                width: 150%;
+                height: 5vh;
+                height: 9vh;
+                background: #202224;
+                box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.25), 10px 10px 20px #000000;
+                border-radius: 10px;
+            }
+
+            .mark:hover {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                color: #000000;
+                background: linear-gradient(93.18deg, #05ECC2 0%, rgba(4, 121, 100, 0.25) 103.6%);
+                box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.25), 10px 10px 20px #000000;
+                border-radius: 10px;
+            }
+
+            .mark:active {
+                background: #202224;
+                box-shadow: inset -10px -10px 20px rgba(255, 255, 255, 0.25), inset 10px 10px 20px #000000;
+                border-radius: 10px;
+            }
+
+        }
+
+
+        .footer {
+
+            .modal {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .arrow {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 129px;
+                    margin-top: -8vh;
+
+
+                    .outHome {
+                        width: 7vw;
+                        height: 4vh;
+                        margin-top:-2.5vh;
+                    }
+                }
+            }
+        }
+    }
+}
